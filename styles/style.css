@@ -1,0 +1,368 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1210px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.section_start_button::after {
+    content: url('../images/arrow.png');
+    padding: 2px;
+}
+
+.section_start {
+    padding: 50px 0;
+}
+
+.modern {
+    background-image: url("../images/modern.png");
+    background-repeat: no-repeat;
+    min-height: 511px;
+}
+
+.geometric {
+    background-image: url("../images/geometric.png");
+    background-repeat: no-repeat;
+    min-height: 247px;
+}
+
+.minimal {
+    background-image: url("../images/minimal.png");
+    background-repeat: no-repeat;
+    min-height: 247px;
+}
+
+.section_start_wrapper {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 669px 485px;
+    column-gap: 19px;
+    row-gap: 17px;
+}
+
+.section_start_card:first-child {
+    grid-row: span 2;
+}
+
+.section_start_title {
+    margin-bottom: 10px;
+    font-family: Mulish, sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+    text-align: left;
+    color: #555555;
+}
+
+.section_start_price {
+    margin-bottom: 13px;
+    font-family: Mulish, sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 26px;
+    text-align: left;
+    color: #7AC751;
+}
+
+.section_start_button {
+    font-family: Mulish, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: left;
+    color: #757575;
+}
+
+.section_start_button:hover {
+    color: #ff0404;
+}
+
+.section_trending {
+    padding: 120px 0 99px;
+    position: relative;
+}
+
+.section_trending_titles {
+    margin-bottom: 73px;
+    text-align: center;
+}
+
+.section_trending_card_block {
+    position: relative;
+}
+
+.section_trending_links {
+    position: absolute;
+    right: 6px;
+    bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-content: center;
+}
+
+.section_trending_link {
+    max-height: 38.89px;
+    max-width: 38.89px;
+    border-radius: 50%;
+    border: 1px solid #FFFFFF;
+    background-color: #FFFFFF;
+    box-shadow: 0px 2px 33px 0px #00000017;
+    padding: 8px;
+}
+
+.section_trending_link:hover {
+    background-color: #7AC751;
+    opacity: 70%;
+}
+
+.section_title {
+    margin-bottom: 45px;
+    font-family: Mulish, sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 45px;
+    color: #555555;
+}
+
+.section_trending_subtitle {
+    display: inline-block;
+    padding-right: 70px;
+    font-family: Mulish, sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 30px;
+    color: #7AC751;
+}
+
+.inactive {
+    color: #C2C2C2;
+}
+
+.inactive:last-child {
+    padding-right: 0px;
+}
+
+.section_trending_cards {
+    display: grid;
+    grid-template-columns: 270px 270px 270px 270px;
+    column-gap: 30px;
+    row-gap: 45px;
+}
+
+.section_trending_card {
+    position: relative;
+}
+
+.section_trending_button_new {
+    font-family: Mulish, sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+    color: #FFFFFF;
+    background-color: #00B7F1;
+    border-bottom-right-radius: 5px;
+    padding: 1px 9px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.sale {
+    background-color:#7AC751;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.section_trending_button_new:hover {
+    opacity: 50%;
+}
+
+.section_trending_card_kind {
+    margin-top: 15px;
+    font-family: Mulish, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: left;
+    color: #757575;
+    opacity: 71%;
+}
+
+.section_trending_card_name {
+    margin-top: 9px;
+    font-family: Rubik, sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: left;
+    color: #555555;
+}
+
+.section_trending_card_prices {
+    display: grid;
+    grid-template-columns: 25% auto 25%;
+    max-width: 100%;
+    margin-top: 8px;
+    align-items: center
+}
+
+.section_card_price {
+    font-family: Mulish, sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: left;
+    color: #7AC751;
+}
+
+.section_card_price_sale {
+    font-family: Mulish, sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: left;
+    color: #CCCCCC;
+    text-decoration: line-through;
+}
+
+.section_trending_circles {
+    display: flex;
+    margin-top: 58px;
+    gap: 14px;
+    justify-content: center;
+}
+
+.section_trending_circle:hover {
+    opacity: 50%;
+}
+
+.logo_stars {
+    display: inline-flex;
+}
+
+.section_special {
+    padding: 100px 0 120px;
+}
+
+.living_room {
+    background-image: url("../images/living_room.png");
+    background-repeat: no-repeat;
+    min-height: 249px;
+}
+
+.modern_chair {
+    background-image: url("../images/modern_chair.png");
+    background-repeat: no-repeat;
+    min-height: 249px;
+}
+
+.section_special h2{
+    text-align: center;
+    margin-bottom: 65px;
+}
+
+.section_special_cards {
+    display: grid;
+    grid-template-columns: 570px 570px;
+    column-gap: 30px;
+}
+
+.section_special_card {
+    position: relative;
+    max-width: 570px;
+}
+
+.section_special_button {
+    font-family: Mulish, sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+    color: #FFFFFF;
+    background-color: #00B7F1;
+    border-bottom-left-radius: 5px;
+    padding: 5px 8px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+.section_special_button:hover {
+    opacity: 50%;
+}
+
+.section_special_text {
+    text-align: left;
+    max-width: 227px;
+}
+
+.section_special_title {
+    margin-bottom: 11px;
+    font-family: Mulish, sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 28px;
+    color: #555555;
+}
+
+.section_special_paragraph {
+    margin-bottom: 23px;
+    font-family: Mulish, sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color: #757575;
+}
+
+.section_card_button {
+    font-family: Mulish, sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+    border-radius: 2px;
+    color: #FFFFFF;
+    background-color: #7AC751;
+    padding: 7px 10px;
+    margin-left: 19px;
+    
+}
+
+.section_card_button:hover {
+    background-color: #b4e699;
+}
+
+.section_card-prices {
+    display: inline-flex;
+    max-width: 100%;
+    margin-bottom: 29px;
+    gap: 7px;
+}
+
+.section_card_icons {
+    display: grid;
+    grid-template-columns: 40px 40px 40px 40px;
+    column-gap: 18px;
+}
+
+
