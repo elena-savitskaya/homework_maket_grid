@@ -61,6 +61,10 @@ img {
     grid-row: span 2;
 }
 
+.section_start_card {
+    padding: 52px 0 0 24px;
+}
+
 .section_start_title {
     margin-bottom: 10px;
     font-family: Mulish, sans-serif;
@@ -290,6 +294,7 @@ img {
 .section_special_card {
     position: relative;
     max-width: 570px;
+    padding: 33px 0 0 22px;
 }
 
 .section_special_button {
