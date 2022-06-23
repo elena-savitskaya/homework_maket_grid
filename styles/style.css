@@ -52,7 +52,7 @@ img {
 .section_start_wrapper {
     display: grid;
     width: 100%;
-    grid-template-columns: 669px 485px;
+    grid-template-columns: 670px 484px;
     column-gap: 19px;
     row-gap: 17px;
 }
