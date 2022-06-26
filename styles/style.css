@@ -28,12 +28,13 @@ img {
 }
 
 .section_start {
-    padding: 50px 0;
+    padding: 60px 0;
 }
 
 .modern {
     background-image: url("../images/modern.png");
     background-repeat: no-repeat;
+    background-position: right;
     min-height: 511px;
 }
 
@@ -52,7 +53,7 @@ img {
 .section_start_wrapper {
     display: grid;
     width: 100%;
-    grid-template-columns: 670px 484px;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     column-gap: 19px;
     row-gap: 17px;
 }
@@ -99,13 +100,43 @@ img {
 }
 
 .section_trending {
-    padding: 120px 0 99px;
+    padding: 60px 0;
     position: relative;
 }
 
 .section_trending_titles {
     margin-bottom: 73px;
     text-align: center;
+}
+
+.section_trending_subtitles {
+    display: flex;
+    gap: 70px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.section_title {
+    margin-bottom: 45px;
+    font-family: Mulish, sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 45px;
+    color: #555555;
+}
+
+.section_trending_subtitle {
+    display: inline-block;
+    font-family: Mulish, sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 30px;
+    color: #7AC751;
+}
+
+.inactive {
+    color: #C2C2C2;
 }
 
 .section_trending_card_block {
@@ -137,36 +168,10 @@ img {
     opacity: 70%;
 }
 
-.section_title {
-    margin-bottom: 45px;
-    font-family: Mulish, sans-serif;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 45px;
-    color: #555555;
-}
-
-.section_trending_subtitle {
-    display: inline-block;
-    padding-right: 70px;
-    font-family: Mulish, sans-serif;
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 30px;
-    color: #7AC751;
-}
-
-.inactive {
-    color: #C2C2C2;
-}
-
-.inactive:last-child {
-    padding-right: 0px;
-}
 
 .section_trending_cards {
     display: grid;
-    grid-template-columns: repeat(4, 1fr) ;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)) ;
     column-gap: 30px;
     row-gap: 45px;
 }
@@ -265,7 +270,7 @@ img {
 }
 
 .section_special {
-    padding: 100px 0 120px;
+    padding: 60px 0;
 }
 
 .living_room {
@@ -287,13 +292,13 @@ img {
 
 .section_special_cards {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fill, minmax(40%, 1fr));
     column-gap: 30px;
 }
 
 .section_special_card {
     position: relative;
-    max-width: 570px;
+    max-width: 100%;
     padding: 33px 0 0 22px;
 }
 
@@ -371,3 +376,37 @@ img {
 }
 
 
+@media screen and (max-width: 575px) {
+    .section_special_cards {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+        row-gap: 50px;
+    }
+}    
+
+@media screen and (max-width: 490px) {
+    .section_trending_cards {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+    }
+
+    .section_trending_titles {
+        margin-bottom: 25px;
+    }
+
+    .section_trending_subtitles {
+        gap: 25px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .section_start_wrapper {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+}
