@@ -57,9 +57,9 @@ img {
 .header_nav_links_link {
     font-weight: 700;
     font-family: Mulish, sans-serif;
-    font-size: 22px;
-    line-height: 25px;
-    color: #252323;
+    font-size: 18px;
+    line-height: 20px;
+    color:  #555555;
 }
 
 .header_nav_links_link:hover {
@@ -73,9 +73,10 @@ img {
 
 .section_main {
     width: 100%;
-    padding: 20px 0;
-    background:  #252323;
-    color: #fff;
+    padding: 40px 0;
+    background:  #7AC751;
+    opacity: 0.8;
+    color:  #ffffff;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -84,10 +85,10 @@ img {
   
   .split h1 {
     font-size: 26px;
-    letter-spacing: .2rem;
+    letter-spacing: 10px;
     text-align: center;
     font-family: "Roboto Flex";
-    font-weight: 300;
+    font-weight: 500;
     font-style: normal;
     font-stretch: 100%;
     line-height: initial;
@@ -115,10 +116,9 @@ img {
     z-index: 2;
     filter: none;
     color: transparent;
-     background: linear-gradient(#2cc8f7, #ceff00) 0% 0% / 400% 100%;
+     background: linear-gradient(#4dff00, #fff200) 100% 0% / 400% 100%;
      background-clip: text;
   -webkit-background-clip: text;
-  color: transparent;
   }
     
 .section_start_button::after {
