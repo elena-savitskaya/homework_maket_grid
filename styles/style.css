@@ -22,6 +22,53 @@ img {
     display: block;
 }
 
+.header {
+    background-color: #FFFFFF;
+    padding: 25px 0;
+}
+
+.header_wrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header_nav {
+    display: flex;
+   justify-content: space-between;
+   align-items: center;
+   gap: 40px;
+}
+
+.header_nav_logo {
+    max-width: 130px;
+}
+
+.header_nav_links {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 40px;
+}
+
+.header_nav_links_link {
+    font-weight: 700;
+    font-family: Mulish, sans-serif;
+    font-size: 22px;
+    line-height: 26px;
+    color: #252323;
+}
+
+.header_nav_links_link:hover {
+    color:  #ff0404;
+}
+
+.burger-menu {
+    display: none;
+}
+ 
 .section_start_button::after {
     content: url('../images/arrow.png');
     padding: 2px;
@@ -41,12 +88,14 @@ img {
 .geometric {
     background-image: url("../images/geometric.png");
     background-repeat: no-repeat;
+    background-position: right;
     min-height: 247px;
 }
 
 .minimal {
     background-image: url("../images/minimal.png");
     background-repeat: no-repeat;
+    background-position: right;
     min-height: 247px;
 }
 
@@ -375,7 +424,64 @@ img {
     column-gap: 18px;
 }
 
+.footer {
+    padding: 48px 0;
+}
+.footer_wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
 
+.footer_wrapper_text {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+}
+
+.footer_wrapper_text a{
+    font-weight: 700;
+    color: #555555;
+}
+
+.footer_wrapper_text a:hover{
+    opacity: 0.8;
+}
+
+@media screen and (max-width: 767px) {
+    
+    .container {
+        max-width: 100%;
+    }
+                  
+    .header_nav_links {
+        display: none;
+    }
+        
+    .burger-menu {
+        display: inline-flex;
+        margin-left: auto;
+        width: 50px;
+        height: 50px;
+    }
+
+    .footer_wrapper_text {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 30px;
+        align-content: center;
+        flex-direction: column;
+    }
+}
+    
+    
 @media screen and (max-width: 575px) {
     .section_special_cards {
         display: grid;
@@ -410,3 +516,5 @@ img {
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     }
 }
+
+
