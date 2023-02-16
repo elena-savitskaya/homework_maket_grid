@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100;8..144,200;8..144,300;8..144,400;8..144,500;8..144,600;8..144,700;8..144,800;8..144,900;8..144,1000&display=swap");
 
 * {
     margin: 0;
@@ -57,7 +58,7 @@ img {
     font-weight: 700;
     font-family: Mulish, sans-serif;
     font-size: 22px;
-    line-height: 26px;
+    line-height: 25px;
     color: #252323;
 }
 
@@ -68,7 +69,58 @@ img {
 .burger-menu {
     display: none;
 }
- 
+
+
+.section_main {
+    width: 100%;
+    padding: 20px 0;
+    background:  #252323;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    -webkit-font-smoothing: antialiased;
+  }
+  
+  .split h1 {
+    font-size: 26px;
+    letter-spacing: .2rem;
+    text-align: center;
+    font-family: "Roboto Flex";
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: 100%;
+    line-height: initial;
+    font-variation-settings: "opsz" 48, "slnt" 0, "GRAD" 0, "XTRA" 468, "YOPQ" 79,
+      "YTAS" 750, "YTDE" -203, "YTFI" 738, "YTLC" 514, "YTUC" 712;
+    font-optical-sizing: auto;
+  }
+  
+  .split h1 span {
+    display: inline-block;
+    white-space: break-spaces;
+    transition: font-weight 0.2s ease;
+    position: relative;
+  }
+  
+  .split h1 span::before,
+  .split h1 span::after {
+    content: attr(data-char);
+    position: absolute;
+    left: 0;
+    color: transparent;
+  }
+  
+  .split h1 span::after{
+    z-index: 2;
+    filter: none;
+    color: transparent;
+     background: linear-gradient(#2cc8f7, #ceff00) 0% 0% / 400% 100%;
+     background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  }
+    
 .section_start_button::after {
     content: url('../images/arrow.png');
     padding: 2px;
