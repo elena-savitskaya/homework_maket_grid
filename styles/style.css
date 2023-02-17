@@ -168,7 +168,7 @@ img {
 }
 
 .section_start_text {
-    padding-left: 80px;
+    padding-left: 100px;
 }
 
 .section_start_title {
@@ -513,6 +513,7 @@ img {
     
     .container {
         max-width: 100%;
+        overflow: hidden;
     }
                   
     .header_nav_links {
@@ -526,6 +527,10 @@ img {
         height: 50px;
     }
 
+    .section_start_text {
+        padding-left: 20px;
+    }
+    
     .footer_wrapper_text {
         display: flex;
         flex-wrap: wrap;
