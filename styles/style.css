@@ -167,6 +167,10 @@ img {
     padding: 52px 0 0 24px;
 }
 
+.section_start_text {
+    padding-left: 60px;
+}
+
 .section_start_title {
     margin-bottom: 10px;
     font-family: Mulish, sans-serif;
